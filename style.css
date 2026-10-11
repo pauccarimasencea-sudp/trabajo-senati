@@ -1,0 +1,115 @@
+:root {
+    --color-primario: #003366;
+    --color-secundario: #0051ff;
+    --color-oscuro: #212529;
+    --color-claro: #f8f9fa;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-oscuro);
+    background-color: var(--color-claro);
+}
+
+.text-primary {
+    color: var(--color-primario) !important;
+}
+
+/* BANNER PRINCIPAL CON CAPA OSCURA Y IMAGEN DE FONDO */
+.hero-section {
+    background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), 
+                url('https://unsplash.com') no-repeat center center/cover;
+    color: white;
+    
+    /* REGLAS CLAVE PARA ACHICAR EL BLOQUE */
+    min-height: 40vh;   /* Reducido de 70vh a solo 40vh de la pantalla */
+    padding: 50px 0;    /* Reducido a la mitad (solo 50px de espacio arriba y abajo) */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Control para el botón grande y ordenado */
+.btn-brand {
+    background-color: var(--color-secundario);
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-brand:hover {
+    background-color: #0022e0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 102, 0, 0.5);
+}
+
+/* MAQUETACIÓN EXPLICITA EN GRID */
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.card-servicio {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    background: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.card-servicio:hover {
+    transform: translateY(-5px);
+}
+
+/* CONTROL DE DIMENSIONES PARA LAS NUEVAS IMÁGENES DE LAS TARJETAS */
+.img-tarjeta {
+    width: 65px !important;
+    height: 65px !important;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* MAQUETACIÓN EXPLICITA EN FLEXBOX */
+.features-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.feature-item {
+    flex: 1 1 220px;
+    background: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    text-align: left;
+}
+
+.form-control, .form-select {
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.error-message {
+    font-size: 0.85rem;
+    color: #3d35dc;
+    display: none;
+    margin-top: 5px;
+}
+
+.line-break-title {
+    font-size: 2.8rem;       /* Tamaño proporcional para las 3 filas */
+    line-height: 1.3;        /* Altura de línea para que no se encima el texto */
+    letter-spacing: -0.5px;  /* Estilo moderno y compacto */
+    margin-bottom: 30px;     /* Separación con el subtítulo de abajo */
+}
+

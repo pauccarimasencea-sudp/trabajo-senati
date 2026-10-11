@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Académica Institucional - SENATI</title>
+    <!-- ENLACES REALES COMPLETOS DE BOOTSTRAP 5 Y FUENTES -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN INSTITUCIONAL -->
+    <header class="sticky-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container py-3">
+            <a class="navbar-brand fw-bold text-primary" href="#">EDUCACIÓN SUPERIOR TECTNOLÓGICA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link mx-2 fw-semibold" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2 fw-semibold" href="#servicios">Servicios Académicos</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2 fw-semibold" href="#beneficios">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2 fw-semibold" href="#registro">Registro</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BANNER HERO PRINCIPAL -->
+        <section id="inicio" class="hero-section d-flex align-items-center justify-content-center">
+    <div class="container text-center text-white">
+        <!-- Fila 1: Título Principal Grande -->
+        <h1 class="display-4 fw-bold mb-3 text-white">
+            Lidera el Mañana 
+            con Educación Técnica 
+            de Vanguardia</h1>
+        
+        <!-- Fila 2: Subtítulo Persuasivo y Legible -->
+        <p class="lead mb-4 max-w-2xl mx-auto text-white-50">Adquiere competencias especializadas con laboratorios avanzados y alta inserción laboral inmediata.</p>
+        
+        <!-- Fila 3: Botón de Llamado a la Acción Centrado -->
+        <div class="d-block">
+            <a href="#servicios" class="btn btn-brand btn-lg px-5 py-3 fw-bold rounded-3">Explorar Carreras</a>
+        </div>
+    </div>
+</section>
+
+        <!-- SECCIÓN SERVICIOS ACADÉMICOS (CSS GRID) -->
+        <section id="servicios" class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Servicios Académicos</h2>
+                <div class="btn-group mt-3" role="group">
+                    <button type="button" class="btn btn-outline-primary active filter-btn" data-filter="todos">Todos</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="ti">Tecnología</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="ingenieria">Ingeniería</button>
+                </div>
+            </div>
+
+            <!-- Contenedor Maquetado con Grid e Imágenes Reales Incorporadas -->
+            <div class="grid-servicios" id="contenedor-carreras">
+                <!-- Tarjeta 1: Desarrollo de Software -->
+                <div class="card card-servicio p-3 item-carrera" data-category="ti">
+                    <div class="card-body">
+                        <div class="mb-3 text-start">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFelQrIt2HbwRwAtSlhTKCBOihpH2tx8lnYjd4-KHrdw&s=10" alt="Desarrollo de Software" class="img-tarjeta">
+                        </div>
+                        <span class="badge bg-primary mb-2">TI y Software</span>
+                        <h5 class="card-title fw-bold">Desarrollo de Software</h5>
+                        <p class="card-text text-muted">Diseña, programa y despliega aplicaciones empresariales web y móviles multiplataforma.</p>
+                        <a href="#registro" class="text-decoration-none fw-bold text-dark">Solicitar Información →</a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Ciberseguridad -->
+                <div class="card card-servicio p-3 item-carrera" data-category="ti">
+                    <div class="card-body">
+                        <div class="mb-3 text-start">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdCALrzS2wEPug87I2NqDBu3kjC-8p8VV-5bd27pVxZQ&s=10" alt="Ciberseguridad" class="img-tarjeta">
+                        </div>
+                        <span class="badge bg-primary mb-2">TI y Software</span>
+                        <h5 class="card-title fw-bold">Ciberseguridad del Entorno</h5>
+                        <p class="card-text text-muted">Protege la infraestructura informática, bases de datos y redes contra intrusiones globales.</p>
+                        <a href="#registro" class="text-decoration-none fw-bold text-dark">Solicitar Información →</a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Automatización Industrial -->
+                <div class="card card-servicio p-3 item-carrera" data-category="ingenieria">
+                    <div class="card-body">
+                        <div class="mb-3 text-start">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwxp9X2I9kiGAKd0A__eUtCybI77_LvupJWQX5F193LQ&s=10" alt="Automatización Industrial" class="img-tarjeta">
+                        </div>
+                        <span class="badge bg-success mb-2">Ingeniería</span>
+                        <h5 class="card-title fw-bold">Automatización Industrial</h5>
+                        <p class="card-text text-muted">Programa PLC, robótica industrial y sistemas automatizados de manufactura integrada.</p>
+                        <a href="#registro" class="text-decoration-none fw-bold text-dark">Solicitar Información →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN BENEFICIOS (CSS FLEXBOX) -->
+        <section id="beneficios" class="bg-light py-5">
+            <div class="container">
+                <h3 class="fw-bold mb-4 text-start ms-2">Beneficios</h3>
+                <div class="features-flex">
+                    <div class="feature-item">
+                        <div class="fs-2 text-primary mb-2"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h5 class="fw-bold">90% Inserción Laboral</h5>
+                        <p class="small text-muted">Alianzas de empleabilidad con empresas nacionales líderes.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="fs-2 text-primary mb-2"><i class="bi bi-award"></i></div>
+                        <h5 class="fw-bold">Talleres Certificados</h5>
+                        <p class="small text-muted">Equipamiento tecnológico de última generación para simulaciones reales.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="fs-2 text-primary mb-2"><i class="bi bi-person-workspace"></i></div>
+                        <h5 class="fw-bold">Módulos Duales</h5>
+                        <p class="small text-muted">Aprende haciendo directamente mediante convenios prácticos.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="fs-2 text-primary mb-2"><i class="bi bi-patch-check"></i></div>
+                        <h5 class="fw-bold">Certificaciones</h5>
+                        <p class="small text-muted">Obtén credenciales oficiales a lo largo de tu formación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE REGISTRO EN DOS COLUMNAS EXACTAS (POST) -->
+        <section id="registro" class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="bg-white p-4 rounded-4 shadow-sm border">
+                        <h3 class="fw-bold mb-2">Formulario de Registro</h3>
+                        <p class="text-center text-muted small mb-4">Registra tus datos legítimos y un orientador se pondrá en contacto contigo.</p>
+                        
+                        <form id="formularioPostulante" method="POST" novalidate>
+                            <!-- Fila 1 -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label fw-semibold">Nombres y Apellidos completos *</label>
+                                    <input type="text" id="nombre" class="form-control py-2" placeholder="Ej. Alberto Pauccarima">
+                                    <div class="error-message" id="error-nombre">Mínimo 4 caracteres alfabéticos, sin números.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label fw-semibold">Correo Electrónico Válido *</label>
+                                    <input type="email" id="correo" class="form-control py-2" placeholder="Ismael@instituto.edu.pe">
+                                    <div class="error-message" id="error-correo">Escriba una dirección de correo con formato válido.</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Fila 2 -->
+                          <div class="row">
+    <div class="col-md-6 mb-3">
+        <label class="form-label fw-semibold">Número de Celular Móvil *</label>
+        <input type="text" class="form-control" id="telefono" maxlength="9" placeholder="987654321" required>
+    </div>
+</div>
+    <!-- Asegúrate de pegarlo EXACTAMENTE así, con las etiquetas <script> incluidas -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const inputTelefono = document.querySelector('#telefono');
+        if (inputTelefono) {
+            inputTelefono.addEventListener('input', function() {
+                this.value = this.value.replace(/[^0-9]/g, '');
+                if (this.value.length > 9) {
+                    this.value = this.value.slice(0, 9);
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>
